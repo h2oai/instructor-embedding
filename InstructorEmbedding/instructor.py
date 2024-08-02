@@ -1,4 +1,4 @@
-# This script is based on the modifications from https://github.com/UKPLab/sentence-transformers
+# This script is based on the modifications from https://github.com/UKPLab/sentence-transformers-old
 import torch
 import os
 import json
@@ -6,8 +6,8 @@ import importlib
 import numpy as np
 from tqdm.autonotebook import trange
 from torch import Tensor, device
-from sentence_transformers import SentenceTransformer
-from sentence_transformers.models import Transformer
+from sentence_transformers_old import SentenceTransformer
+from sentence_transformers_old.models import Transformer
 from transformers import AutoConfig
 from transformers import AutoTokenizer
 from collections import OrderedDict
@@ -439,12 +439,12 @@ class INSTRUCTOR(SentenceTransformer):
 
     def _load_sbert_model(self, model_path):
         """
-        Loads a full sentence-transformers model
+        Loads a full sentence-transformers-old model
         """
-        # Check if the config_sentence_transformers.json file exists (exists since v2 of the framework)
-        config_sentence_transformers_json_path = os.path.join(model_path, 'config_sentence_transformers.json')
-        if os.path.exists(config_sentence_transformers_json_path):
-            with open(config_sentence_transformers_json_path) as fIn:
+        # Check if the config_sentence_transformers_old.json file exists (exists since v2 of the framework)
+        config_sentence_transformers_old_json_path = os.path.join(model_path, 'config_sentence_transformers_old.json')
+        if os.path.exists(config_sentence_transformers_old_json_path):
+            with open(config_sentence_transformers_old_json_path) as fIn:
                 self._model_config = json.load(fIn)
 
         # Check if a readme exists

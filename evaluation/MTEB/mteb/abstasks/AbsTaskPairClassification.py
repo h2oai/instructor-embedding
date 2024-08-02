@@ -21,7 +21,7 @@ class AbsTaskPairClassification(AbsTask):
 
         data_split = self.dataset[split][0]
 
-        logging.getLogger("sentence_transformers.evaluation.PairClassificationEvaluator").setLevel(logging.WARN)
+        logging.getLogger("sentence_transformers_old.evaluation.PairClassificationEvaluator").setLevel(logging.WARN)
         evaluator = PairClassificationEvaluator(
             data_split["sent1"], data_split["sent2"], data_split["labels"], **kwargs
         )

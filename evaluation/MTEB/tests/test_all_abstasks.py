@@ -2,7 +2,7 @@ import logging
 
 from mteb import MTEB
 from mteb.tasks.BitextMining import BUCCBitextMining
-from sentence_transformers import SentenceTransformer
+from sentence_transformers_old import SentenceTransformer
 
 
 logging.basicConfig(level=logging.INFO)

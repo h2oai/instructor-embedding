@@ -7,7 +7,7 @@ import torch.multiprocessing as mp
 
 from .AbsTask import AbsTask
 from transformers import AutoTokenizer
-from sentence_transformers import SentenceTransformer
+from sentence_transformers_old import SentenceTransformer
 
 logger = logging.getLogger(__name__)
 

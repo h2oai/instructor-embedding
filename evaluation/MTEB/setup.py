@@ -80,7 +80,7 @@ setup(
         "requests>=2.26.0",
         "scikit_learn>=1.0.2",
         "scipy",
-        "sentence_transformers>=2.2.0",
+        "sentence_transformers_old>=2.2.0",
         "torch",
         "tqdm",
         "rich",

@@ -10,7 +10,7 @@ class RedditClusteringP2P(AbsTaskClustering):
             "description": (
                 "Clustering of title+posts from reddit. Clustering of 10 sets with 1K - 100K samples and 10 - 100 labels each."
             ),
-            "reference": "https://huggingface.co/datasets/sentence-transformers/reddit-title-body",
+            "reference": "https://huggingface.co/datasets/sentence-transformers-old/reddit-title-body",
             "type": "Clustering",
             "category": "p2p",
             "eval_splits": ["test"],
