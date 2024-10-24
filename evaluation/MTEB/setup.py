@@ -74,7 +74,7 @@ setup(
     python_requires=">=3.7.0",
     install_requires=[
         "datasets>=2.2.0",
-        "pyarrow==8.0.0",
+        "pyarrow==14.0.1",
         "jsonlines",
         "numpy",
         "requests>=2.26.0",
